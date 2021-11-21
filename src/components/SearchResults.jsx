@@ -1,9 +1,9 @@
 import NavBar from "./NavBar";
 import NewsList from "./NewsList";
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 
 const SearchResult = () => {
-    const search = useLocation().search;
+    const search = new URLSearchParams(window.location.search);
     console.log(search);
     const name = new URLSearchParams(search).get("search");
     console.log(name);

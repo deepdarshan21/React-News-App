@@ -1,20 +1,17 @@
 import { useEffect, useState } from "react";
 import Axios from "axios";
 import Article from "./Article";
-// import "../css/NewsList.css";
 
 const Content = (props) => {
-    const apiKey="4a9c1e40430d47c5b3ab3a58b85ae6dd";
-
+    console.log(process.env);
     const [articles, setArticles] = useState([]);
     useEffect(() => {
         let api;
-        if(!(props.isSearch==="true")){
-            api= `https://newsapi.org/v2/top-headlines?country=in&category=${props.api}&apiKey=${apiKey}`;
+        if (!(props.isSearch === "true")) {
+            api = `https://newsapi.org/v2/top-headlines?country=in&category=${props.api}&apiKey=${process.env.REACT_APP_API_KEY}`;
             console.log("Yes");
-        }
-        else{
-            api = `https://newsapi.org/v2/everything?q=${props.search}&from=2021-11-20&to=2021-11-20&sortBy=popularity&apiKey=${apiKey}`;
+        } else {
+            api = `https://newsapi.org/v2/everything?q=${props.search}&from=2021-11-20&to=2021-11-20&sortBy=popularity&apiKey=${process.env.REACT_APP_API_KEY}`;
             console.log("No");
             console.log(props.search);
         }

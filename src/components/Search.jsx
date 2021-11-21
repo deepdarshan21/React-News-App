@@ -17,7 +17,7 @@ const Search = () => {
                 placeholder="Search..."
             />
             <Link to={`/search=${value}`}>
-                <button class="btn btn-outline-success my-2 my-sm-0">Search</button>
+                <button className="btn btn-outline-success my-2 my-sm-0">Search</button>
             </Link>
         </div>
     );
