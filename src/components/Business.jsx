@@ -6,7 +6,7 @@ const Business = () => {
         <div>
             <NavBar />
             <h2>Business</h2>
-            <NewsList api="business" />
+            <NewsList api="business" isSearch="false" search="" />
         </div>
     );
 };

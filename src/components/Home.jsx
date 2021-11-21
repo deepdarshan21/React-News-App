@@ -6,7 +6,7 @@ const Home = () => {
         <div>
             <NavBar />
             <h2>Top Headlines</h2>
-            <NewsList api="" />
+            <NewsList api="" isSearch="false" search="" />
         </div>
     );
 };

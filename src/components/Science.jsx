@@ -6,7 +6,7 @@ const Lifestyle = () => {
         <div>
             <NavBar />
             <h2>Science</h2>
-            <NewsList api="science" />
+            <NewsList api="science" isSearch="false" search="" />
         </div>
     );
 };

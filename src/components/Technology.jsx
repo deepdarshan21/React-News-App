@@ -6,7 +6,7 @@ const Technology = () => {
         <div>
             <NavBar />
             <h2>Technology</h2>
-            <NewsList api="technology" />
+            <NewsList api="technology" isSearch="false" search="" />
         </div>
     );
 };

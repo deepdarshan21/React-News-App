@@ -6,7 +6,7 @@ const Food = () => {
         <div>
             <NavBar />
             <h2>Food</h2>
-            <NewsList api="health" />
+            <NewsList api="health" isSearch="false" search="" />
         </div>
     );
 };
