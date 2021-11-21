@@ -20,7 +20,7 @@ const Content = (props) => {
             setArticles(res.data.articles);
         };
         getArticles();
-    }, []);
+    }, [props.api, props.isSearch, props.search]);
 
     return (
         <div>
