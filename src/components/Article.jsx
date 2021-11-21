@@ -11,9 +11,9 @@ const Article = (props) => {
                 <h3 className="article-heading">{headLine}</h3>
                 <p className="article-description">
                     {newsDescription}
-                    <spam className="">
+                    {/* <spam className="">
                         <a href="#">...Read More</a>
-                    </spam>
+                    </spam> */}
                 </p>
             </div>
         </div>
