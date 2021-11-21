@@ -1,19 +1,20 @@
 // import TextField from "@mui/material/TextField";
 // import Autocomplete from "@mui/material/Autocomplete";
 // import "../css/Search.css"
-import SearchBar from "material-ui-search-bar";
+// import SearchBar from "material-ui-search-bar";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import NewsList from "./NewsList";
+// import NewsList from "./NewsList";
+import TextField from "@mui/material/TextField";
+
 
 const Search = () => {
     const [value, setValue] = useState("");
     return (
         <div>
-            <SearchBar
+            <TextField
                 value={value}
-                onChange={(newValue) => setValue(newValue)}
-                onRequestSearch={() => <NewsList isSearch="true" search={value} />}
+                onInput={(evt) => setValue(evt.target.value)}
                 placeholder="Search..."
             />
             <Link to={`/search=${value}`}>
