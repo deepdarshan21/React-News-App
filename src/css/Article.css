@@ -1,0 +1,29 @@
+.article {
+    height: 200px;
+    /* display: table; */
+    background-color: aqua;
+    margin: 20px 10px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.article-image {
+    height: 200px;
+    width: 200px;
+    /* padding: 10px; */
+    padding: 10px;
+    display: flexbox;
+    /* display: table-cell; */
+}
+
+.article-content {
+    /* display: table-cell; */
+    padding: 10px;
+    display: flexbox;
+}
+
+.article-heading {
+}
+
+.article-description {
+}
