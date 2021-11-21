@@ -32,7 +32,7 @@ const NavBar = () => {
                         <NavItem name="Science" />
                     </ul>
                     <div class="form-inline my-2 my-lg-0">
-                        <Search class="form-control mr-sm-2" />
+                        <Search />
                     </div>
                 </div>
             </nav>

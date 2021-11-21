@@ -2,11 +2,23 @@
 // import Autocomplete from "@mui/material/Autocomplete";
 // import "../css/Search.css"
 import SearchBar from "material-ui-search-bar";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import NewsList from "./NewsList";
 
 const Search = () => {
+    const [value, setValue] = useState("");
     return (
         <div>
-            <SearchBar placeholder="Search..." />
+            <SearchBar
+                value={value}
+                onChange={(newValue) => setValue(newValue)}
+                onRequestSearch={() => <NewsList isSearch="true" search={value} />}
+                placeholder="Search..."
+            />
+            <Link to={`/search=${value}`}>
+                <button class="btn btn-outline-success my-2 my-sm-0">Search</button>
+            </Link>
         </div>
     );
 };

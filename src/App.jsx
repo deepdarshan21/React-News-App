@@ -6,6 +6,7 @@ import Sports from "./components/Sports";
 import Technology from "./components/Technology";
 import Food from "./components/Food";
 import Science from "./components/Science";
+import SearchResult from "./components/SearchResults";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import {Routes} from "react-router-dom"
 // import { Route } from "react-router";
@@ -25,6 +26,7 @@ function App() {
                     <Route path="/technology" element={<Technology />} />
                     <Route path="/food" element={<Food />} />
                     <Route path="/science" element={<Science />} />
+                    <Route path="/search=:id" element={<SearchResult/>} />
                 </Routes>
             </BrowserRouter>
         </div>

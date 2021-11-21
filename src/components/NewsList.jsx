@@ -9,11 +9,14 @@ const Content = (props) => {
     const [articles, setArticles] = useState([]);
     useEffect(() => {
         let api;
-        if(!props.isSearch){
+        if(!(props.isSearch==="true")){
             api= `https://newsapi.org/v2/top-headlines?country=in&category=${props.api}&apiKey=${apiKey}`;
+            console.log("Yes");
         }
         else{
             api = `https://newsapi.org/v2/everything?q=${props.search}&from=2021-11-20&to=2021-11-20&sortBy=popularity&apiKey=${apiKey}`;
+            console.log("No");
+            console.log(props.search);
         }
         const getArticles = async () => {
             const res = await Axios.get(api);
