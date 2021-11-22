@@ -1,5 +1,5 @@
-import NavBar from "./NavBar";
-import NewsList from "./NewsList";
+import NavBar from "../NavBar";
+import NewsList from "../NewsList";
 // import { useLocation } from "react-router-dom";
 
 const SearchResult = () => {

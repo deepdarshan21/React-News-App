@@ -1,5 +1,5 @@
-import NavBar from "./NavBar";
-import NewsList from "./NewsList";
+import NavBar from "../NavBar";
+import NewsList from "../NewsList";
 
 const Home = () => {
     return (

@@ -1,12 +1,12 @@
 import React from "react";
 // import NavBar from "./components/NavBar"
-import Home from "./components/Home";
-import Business from "./components/Business";
-import Sports from "./components/Sports";
-import Technology from "./components/Technology";
-import Food from "./components/Food";
-import Science from "./components/Science";
-import SearchResult from "./components/SearchResults";
+import Home from "./components/pages/Home";
+import Business from "./components/pages/Business";
+import Sports from "./components/pages/Sports";
+import Technology from "./components/pages/Technology";
+import Food from "./components/pages/Food";
+import Science from "./components/pages/Science";
+import SearchResult from "./components/pages/SearchResults";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import {Routes} from "react-router-dom"
 // import { Route } from "react-router";
